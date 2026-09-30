@@ -17,13 +17,13 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<script>(function(){var r=decodeURIComponent(location.hash.replace(/^#\/?/,""))||"hjem";var ok=["hjem", "tjenester", "prosjekter", "om-meg", "tilbud", "kontakt", "personvern", "404"];var d={maling:"tjenester",tapet:"tjenester",stukkatur:"tjenester",restaurering:"tjenester",fuging:"tjenester",utvendig:"tjenester",oppdragsboka:"prosjekter"};var R=ok.indexOf(r)>-1?r:(d[r]||"404");document.documentElement.setAttribute("data-r",R);var H={"tjenester": "tapet-salong", "prosjekter": "leilighet-kjokken", "om-meg": "taklist-rosett", "tilbud": "tapet-gang", "kontakt": "hus-hvitt"};if(H[R]){var l=document.createElement("link");l.rel="preload";l.as="image";l.setAttribute("imagesrcset","images/"+H[R]+"-600.webp 600w, images/"+H[R]+"-1100.webp 1100w");l.setAttribute("imagesizes","(max-width: 760px) 600px, 100vw");l.setAttribute("fetchpriority","high");document.head.appendChild(l)}})()</script>
+<script>(function(){var r=decodeURIComponent(location.hash.replace(/^#\/?/,""))||"hjem";var ok=["hjem", "tjenester", "prosjekter", "om-meg", "tilbud", "kontakt", "personvern", "404"];var d={maling:"tjenester",tapet:"tjenester",stukkatur:"tjenester",restaurering:"tjenester",fuging:"tjenester",utvendig:"tjenester",oppdragsboka:"prosjekter"};var R=ok.indexOf(r)>-1?r:(d[r]||"404");document.documentElement.setAttribute("data-r",R);var H={"tjenester": "tapet-salong", "prosjekter": "leilighet-kjokken", "om-meg": "trebjelker", "tilbud": "tapet-gang", "kontakt": "hus-hvitt"};if(H[R]){var l=document.createElement("link");l.rel="preload";l.as="image";l.setAttribute("imagesrcset","images/"+H[R]+"-600.webp 600w, images/"+H[R]+"-1100.webp 1100w");l.setAttribute("imagesizes","(max-width: 760px) 600px, 100vw");l.setAttribute("fetchpriority","high");document.head.appendChild(l)}})()</script>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" as="image" href="images/hero-panelvegg-2000.webp" imagesrcset="images/hero-panelvegg-800.webp 800w, images/hero-panelvegg-1200.webp 1200w, images/hero-panelvegg-2000.webp 2000w" imagesizes="(max-aspect-ratio: 1/1) 1200px, 100vw" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -85,7 +85,7 @@
   --bg:        oklch(0.985 0.002 250);
   --surface:   oklch(0.955 0.004 250);
   --ink:       oklch(0.19 0.01 260);
-  --muted:     oklch(0.42 0.012 260);
+  --muted:     oklch(0.36 0.012 260);
   --faint:     oklch(0.62 0.01 260);
   --line:      oklch(0.88 0.005 250);
   --accent:    oklch(0.36 0.055 215);
@@ -93,13 +93,13 @@
   --on-accent: oklch(0.99 0 0);
   --bg-dark:   oklch(0.21 0.012 260);
   --on-dark:   oklch(0.96 0.004 250);
-  --on-dark-muted: oklch(0.80 0.008 250);
+  --on-dark-muted: oklch(0.85 0.008 250);
   --line-dark: oklch(1 0 0 / .14);
   --scrim:     oklch(0.14 0.01 260);
 
-  --step--1: clamp(0.83rem, 0.79rem + 0.20vw, 0.94rem);
-  --step-0:  clamp(1.00rem, 0.95rem + 0.25vw, 1.13rem);
-  --step-1:  clamp(1.20rem, 1.09rem + 0.55vw, 1.50rem);
+  --step--1: clamp(0.94rem, 0.90rem + 0.20vw, 1.03rem);
+  --step-0:  clamp(1.06rem, 1.00rem + 0.30vw, 1.25rem);
+  --step-1:  clamp(1.25rem, 1.14rem + 0.55vw, 1.56rem);
   --step-2:  clamp(1.44rem, 1.27rem + 0.85vw, 1.88rem);
   --step-3:  clamp(1.73rem, 1.48rem + 1.26vw, 2.36rem);
   --step-4:  clamp(2.07rem, 1.71rem + 1.82vw, 2.95rem);
@@ -132,14 +132,14 @@
   --measure: 62ch;
   --nav-h: 4.75rem;
   --tap: 44px;
-  --font-display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
   --font-body: "Hanken Grotesk", "Helvetica Neue", Helvetica, sans-serif;
 }
 
 *,*::before,*::after{box-sizing:border-box}
 [hidden]{display:none!important}
 html{-webkit-text-size-adjust:100%;scroll-padding-top:var(--nav-h)}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:var(--step-0);line-height:1.6;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:var(--step-0);line-height:1.65;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit}
 h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:1.06;letter-spacing:-0.012em;margin:0;text-wrap:balance;font-optical-sizing:auto}
@@ -196,11 +196,12 @@ ul,ol{margin:0;padding:0;list-style:none}
 .brand-mark{width:2.6rem;aspect-ratio:696/352;background:currentColor;-webkit-mask:url(images/logo-fw.png) center/contain no-repeat;mask:url(images/logo-fw.png) center/contain no-repeat}
 .brand-name{font-family:var(--font-display);font-size:var(--step-1);line-height:1;letter-spacing:-0.005em;white-space:nowrap}
 .nav-links{display:flex;align-items:center;gap:var(--space-m)}
-.nav-links a{text-decoration:none;font-size:var(--step--1);font-weight:500;padding-block:var(--space-2xs);border-bottom:var(--hair) solid transparent;transition:border-color var(--dur-2) var(--ease-1)}
+.nav-links a{text-decoration:none;font-size:var(--step-0);font-weight:500;padding-block:var(--space-2xs);border-bottom:var(--hair) solid transparent;transition:border-color var(--dur-2) var(--ease-1)}
 .nav-links a:hover,.nav-links a[aria-current="page"]{border-bottom-color:currentColor}
-.nav-call{display:inline-flex;align-items:center;gap:var(--space-2xs);min-height:var(--tap);padding:var(--space-2xs) var(--space-s);border:var(--hair) solid currentColor;border-radius:var(--radius-round);text-decoration:none;font-size:var(--step--1);font-weight:600;white-space:nowrap}
+.nav-links .nav-call,.nav-call{display:inline-flex;align-items:center;gap:var(--space-2xs);min-height:var(--tap);padding:var(--space-2xs) var(--space-s);border:var(--hair) solid currentColor;border-radius:var(--radius-round);text-decoration:none;font-size:var(--step--1);font-weight:600;white-space:nowrap}
 .nav-call svg{width:1rem;height:1rem}
-.nav-call:hover{background:currentColor}
+.nav-links .nav-call{padding:var(--space-2xs) var(--space-s);border:var(--hair) solid currentColor;font-size:var(--step--1)}
+.nav-links .nav-call:hover{background:currentColor;border-bottom-color:currentColor}
 .nav-call:hover span,.nav-call:hover svg{color:var(--ink)}
 .site-header.solid .nav-call:hover span,.site-header.solid .nav-call:hover svg{color:var(--bg)}
 .menu-btn{display:none;width:var(--tap);height:var(--tap);border:0;background:transparent;color:inherit;cursor:pointer;padding:0;align-items:center;justify-content:center}
@@ -234,7 +235,7 @@ ul,ol{margin:0;padding:0;list-style:none}
 }
 .hero-inner{padding-block:calc(var(--nav-h) + var(--space-2xl)) var(--space-2xl);width:min(100% - 2 * var(--gutter), var(--container));margin-inline:auto}
 .hero-home .hero-inner{padding-bottom:var(--space-3xl)}
-.hero .place{font-size:var(--step--1);letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:var(--on-dark)}
+.hero .place{font-size:var(--step--1);letter-spacing:.08em;text-transform:uppercase;font-weight:500;color:var(--on-dark)}
 .hero h1{margin-top:var(--space-s);max-width:13ch;text-shadow:0 1px 24px oklch(0.14 0.01 260 / .35)}
 .hero h1 em{font-style:italic}
 .hero .hero-line{margin-top:var(--space-m);font-size:var(--step-1);max-width:38ch;color:var(--on-dark)}
@@ -273,12 +274,13 @@ figcaption{margin-top:var(--space-xs);font-size:var(--step--1);color:var(--muted
 .case-side .panel{flex:1;min-height:12rem}
 .case-side .panel img{position:absolute;inset:0}
 .case-text{grid-column:1 / span 7;margin-top:var(--space-xl)}
-.case-text h2{font-size:var(--step-4)}
+.case-text h2{font-size:var(--step-4);margin-top:var(--space-2xs)}
 .case-text p{margin-top:var(--space-s)}
 .case-text .arrow-link{margin-top:var(--space-l)}
 @media (max-width: 860px){
   .case-main,.case-side,.case-text{grid-column:1 / -1}
-  .case-side{grid-template-columns:1fr 1fr}
+  .case-side{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .case-side .panel{flex:none;aspect-ratio:4 / 5;min-height:0}
 }
 
 /* home: services index */
@@ -300,6 +302,7 @@ figcaption{margin-top:var(--space-xs);font-size:var(--step--1);color:var(--muted
 .ledger .job{font-family:var(--font-display);font-size:var(--step-1);line-height:1.3}
 .ledger .who{font-size:var(--step--1);color:var(--muted);text-align:right}
 .ledger-foot{margin-top:var(--space-m);font-size:var(--step--1);color:var(--muted)}
+.quote-block .kicker{margin-bottom:var(--space-m)}
 .quote-block blockquote{margin:0;font-family:var(--font-display);font-size:var(--step-3);line-height:1.28}
 .quote-block blockquote p::before{content:"«"}
 .quote-block blockquote p::after{content:"»"}
@@ -315,7 +318,7 @@ figcaption{margin-top:var(--space-xs);font-size:var(--step--1);color:var(--muted
 .cta-band .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:saturate(.8)}
 .cta-band::after{content:"";position:absolute;inset:0;z-index:-1;background:oklch(0.16 0.012 260 / .84)}
 .cta-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:var(--space-2xl);align-items:end}
-.cta-grid h2{font-size:var(--step-5);max-width:14ch}
+.cta-grid h2{font-size:var(--step-5);max-width:19ch}
 .cta-grid p{margin-top:var(--space-m);color:var(--on-dark-muted);max-width:44ch}
 .big-phone{display:block;font-family:var(--font-display);font-size:var(--step-5);line-height:1;text-decoration:none;letter-spacing:-0.01em;margin-bottom:var(--space-l)}
 .big-phone:hover{text-decoration:underline;text-decoration-thickness:var(--hair);text-underline-offset:.15em}
@@ -358,11 +361,12 @@ figcaption{margin-top:var(--space-xs);font-size:var(--step--1);color:var(--muted
 .work.wide{grid-column:span 4}
 .work.half{grid-column:span 3}
 .work .panel{aspect-ratio:4 / 5}
-.work.wide .panel,.work.half .panel{aspect-ratio:4 / 3}
+.work.wide .panel{aspect-ratio:8 / 5}
+.work.half .panel{aspect-ratio:6 / 5}
 .work h3{margin-top:var(--space-s);font-size:var(--step-1);line-height:1.3}
 .work p{margin-top:var(--space-3xs);font-size:var(--step--1);color:var(--muted)}
-@media (max-width: 900px){ .work,.work.wide,.work.half{grid-column:span 3} }
-@media (max-width: 560px){ .works{grid-template-columns:1fr} .work,.work.wide,.work.half{grid-column:1 / -1} }
+@media (max-width: 900px){ .work,.work.wide,.work.half{grid-column:span 3} .work .panel,.work.wide .panel,.work.half .panel{aspect-ratio:4 / 5} }
+@media (max-width: 560px){ .works{grid-template-columns:1fr} .work,.work.wide,.work.half{grid-column:1 / -1} .work .panel,.work.wide .panel,.work.half .panel{aspect-ratio:4 / 3} }
 .beforeafter{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--space-m);align-items:end}
 .beforeafter figure:nth-child(1){grid-column:1 / span 4}
 .beforeafter figure:nth-child(2){grid-column:5 / span 4}
@@ -481,6 +485,8 @@ input:focus-visible,select:focus-visible,textarea:focus-visible{outline:none;bor
 /* mobile call bar */
 .callbar{display:none}
 @media (max-width: 760px){
+  .callbar{transition:transform var(--dur-2) var(--ease-out),opacity var(--dur-2) var(--ease-out)}
+  .callbar.away{transform:translateY(calc(100% + var(--space-s)));opacity:0;pointer-events:none}
   .callbar{position:fixed;left:var(--space-xs);right:var(--space-xs);bottom:var(--space-xs);z-index:var(--z-callbar);display:grid;grid-template-columns:1fr 1fr;gap:var(--space-2xs);padding:var(--space-2xs);background:var(--bg-dark);border-radius:var(--radius-round);box-shadow:var(--shadow-3)}
   .callbar a{min-height:3rem;border-radius:var(--radius-round);display:flex;align-items:center;justify-content:center;gap:var(--space-2xs);text-decoration:none;font-weight:600;font-size:var(--step--1)}
   .callbar a svg{width:1.05rem;height:1.05rem}
@@ -928,7 +934,7 @@ input:focus-visible,select:focus-visible,textarea:focus-visible{outline:none;bor
 <!-- ============ OM MEG ============ -->
 <div class="page" data-route="om-meg" data-title="Om meg – Filip Wijatkowski, maler og restaurering i Asker" data-desc="Filip Wijatkowski er maler med over 10 års erfaring, med eget foretak på Hyggen i Asker. Det er han som kommer, gjør jobben og svarer telefonen.">
   <section class="hero hero-sub" aria-labelledby="h-om">
-    <img class="hero-img" loading="lazy" fetchpriority="high" src="images/taklist-rosett-1100.webp" srcset="images/taklist-rosett-600.webp 600w, images/taklist-rosett-1100.webp 1100w" sizes="(max-width: 760px) 600px, 100vw" width="1100" height="825" alt="Nymalt rom med taklister og takrosett i gips">
+    <img class="hero-img" loading="lazy" fetchpriority="high" src="images/trebjelker-1100.webp" srcset="images/trebjelker-600.webp 600w, images/trebjelker-1100.webp 1000w" sizes="(max-width: 760px) 600px, 100vw" width="1000" height="750" alt="Mørkbeisede trebjelker i en lys himling, renovert av Filip">
     <div class="hero-inner"><p class="place">Om meg</p><h1 id="h-om">Én håndverker, hele veien</h1></div>
   </section>
 
@@ -1173,7 +1179,7 @@ input:focus-visible,select:focus-visible,textarea:focus-visible{outline:none;bor
   </div>
 </footer>
 
-<div class="callbar" aria-label="Hurtigkontakt">
+<div class="callbar away" aria-label="Hurtigkontakt">
   <a class="c1" href="tel:+4746572760"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>Ring Filip</a>
   <a class="c2" href="#tilbud">Be om tilbud</a>
 </div>
@@ -1196,9 +1202,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const routes = pages.map(p => p.dataset.route);
   let current = null;
 
+  const callbar = document.querySelector('.callbar');
   function setHeader() {
     const solidPage = current && current.hasAttribute('data-solid');
     header.classList.toggle('solid', solidPage || window.scrollY > 40);
+    const onHomeHero = current && current.dataset.route === 'hjem' && window.scrollY < window.innerHeight * 0.6;
+    callbar.classList.toggle('away', !!onHomeHero);
   }
 
   function route() {
